@@ -1,0 +1,116 @@
+@use 'tailwindcss';
+@use 'primeicons/primeicons.css';
+
+:root {
+  --color-primary: #e11d48;
+  --color-primary-dark: #be123c;
+  --color-accent: #fbbf24;
+  --color-surface: #fff7f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff7f0;
+}
+
+.btn-shopee {
+  background: linear-gradient(135deg, #ee4d2d, #f77d0e);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.85rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: filter 0.2s, transform 0.15s;
+  box-shadow: 0 4px 18px 0 rgba(238,77,45,0.28);
+  &:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e1b4b;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Gallery styles ===== */
+.gallery-item-img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 520px;
+  min-height: 320px;
+}
+
+.gallery-thumb-img {
+  width: 100%;
+  object-fit: cover;
+  height: 72px;
+  min-width: 80px;
+  border-radius: 0.5rem;
+}
+
+.gallery-shopee-tag {
+  margin-bottom: 0.5rem;
+  background-color: #ee4d2d !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 0.75rem !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 9999px !important;
+}
+
+.gallery-papelaria {
+  .p-galleria-item {
+    background: #f9fafb;
+  }
+
+  .p-galleria-nav-button {
+    background: rgba(255,255,255,0.85) !important;
+    color: #e11d48 !important;
+    border-radius: 50% !important;
+    width: 3rem !important;
+    height: 3rem !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+    &:hover {
+      background: white !important;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2) !important;
+    }
+  }
+
+  .p-galleria-thumbnails {
+    background: #1e1b4b;
+    padding: 0.75rem;
+  }
+
+  .p-galleria-thumbnail-item {
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.2s;
+    &:hover, &.p-galleria-thumbnail-item-active {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}
+

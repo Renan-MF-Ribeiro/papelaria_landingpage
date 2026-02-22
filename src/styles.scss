@@ -55,3 +55,62 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ===== Gallery styles ===== */
+.gallery-item-img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 520px;
+  min-height: 320px;
+}
+
+.gallery-thumb-img {
+  width: 100%;
+  object-fit: cover;
+  height: 72px;
+  min-width: 80px;
+  border-radius: 0.5rem;
+}
+
+.gallery-shopee-tag {
+  margin-bottom: 0.5rem;
+  background-color: #ee4d2d !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 0.75rem !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 9999px !important;
+}
+
+.gallery-papelaria {
+  .p-galleria-item {
+    background: #f9fafb;
+  }
+
+  .p-galleria-nav-button {
+    background: rgba(255,255,255,0.85) !important;
+    color: #e11d48 !important;
+    border-radius: 50% !important;
+    width: 3rem !important;
+    height: 3rem !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+    &:hover {
+      background: white !important;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2) !important;
+    }
+  }
+
+  .p-galleria-thumbnails {
+    background: #1e1b4b;
+    padding: 0.75rem;
+  }
+
+  .p-galleria-thumbnail-item {
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.2s;
+    &:hover, &.p-galleria-thumbnail-item-active {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}
+

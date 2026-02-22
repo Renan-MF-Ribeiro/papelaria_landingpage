@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fed7aa" />
+      <stop offset="100%" style="stop-color:#fdba74" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)" rx="12"/>
+  <circle cx="100" cy="110" r="50" fill="#fb923c" opacity="0.2"/>
+  <circle cx="700" cy="490" r="65" fill="#ea580c" opacity="0.12"/>
+  <!-- Gift box -->
+  <rect x="250" y="280" width="300" height="240" rx="8" fill="#ef4444"/>
+  <rect x="250" y="280" width="300" height="240" rx="8" fill="white" opacity="0.15"/>
+  <!-- Box lid -->
+  <rect x="238" y="240" width="324" height="60" rx="8" fill="#dc2626"/>
+  <!-- Ribbon vertical -->
+  <rect x="385" y="240" width="30" height="280" fill="#fbbf24"/>
+  <!-- Ribbon horizontal on lid -->
+  <rect x="238" y="262" width="324" height="18" fill="#fbbf24"/>
+  <!-- Bow left loop -->
+  <ellipse cx="350" cy="230" rx="55" ry="35" fill="#fbbf24" opacity="0.9" transform="rotate(-30, 350, 230)"/>
+  <ellipse cx="350" cy="230" rx="42" ry="22" fill="#f59e0b" opacity="0.7" transform="rotate(-30, 350, 230)"/>
+  <!-- Bow right loop -->
+  <ellipse cx="450" cy="230" rx="55" ry="35" fill="#fbbf24" opacity="0.9" transform="rotate(30, 450, 230)"/>
+  <ellipse cx="450" cy="230" rx="42" ry="22" fill="#f59e0b" opacity="0.7" transform="rotate(30, 450, 230)"/>
+  <!-- Bow center knot -->
+  <circle cx="400" cy="240" r="22" fill="#f59e0b"/>
+  <circle cx="400" cy="240" r="14" fill="#fbbf24"/>
+  <!-- Ribbon tails -->
+  <path d="M385,520 Q360,560 340,570" stroke="#fbbf24" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M415,520 Q440,560 460,570" stroke="#fbbf24" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Stars and sparkles floating around -->
+  <text x="160" y="280" font-family="Arial" font-size="30" fill="#fbbf24" opacity="0.8">✦</text>
+  <text x="600" y="260" font-family="Arial" font-size="22" fill="#f59e0b" opacity="0.7">✦</text>
+  <text x="580" y="380" font-family="Arial" font-size="26" fill="#fb923c" opacity="0.6">✦</text>
+  <text x="170" y="420" font-family="Arial" font-size="18" fill="#fbbf24" opacity="0.6">★</text>
+  <text x="620" y="440" font-family="Arial" font-size="20" fill="#f59e0b" opacity="0.5">★</text>
+  <!-- Small icons on box -->
+  <text x="305" y="400" font-family="Arial" font-size="40" opacity="0.8">📓</text>
+  <text x="430" y="400" font-family="Arial" font-size="38" opacity="0.8">✏️</text>
+  <!-- Label -->
+  <rect x="260" y="510" width="280" height="50" rx="25" fill="white" opacity="0.9"/>
+  <text x="400" y="542" font-family="Arial" font-size="18" fill="#ea580c" font-weight="bold" text-anchor="middle">🎁 Kits Presente</text>
+</svg>

@@ -8,6 +8,7 @@
     <ul class="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
       <li><a href="#sobre" class="hover:text-rose-600 transition-colors">Sobre</a></li>
       <li><a href="#categorias" class="hover:text-rose-600 transition-colors">Categorias</a></li>
+      <li><a href="#galeria" class="hover:text-rose-600 transition-colors">Galeria</a></li>
       <li><a href="#depoimentos" class="hover:text-rose-600 transition-colors">Depoimentos</a></li>
     </ul>
     <a [href]="shopeeUrl" target="_blank" rel="noopener noreferrer">
@@ -131,6 +132,54 @@
   </div>
 </section>
 
+<!-- ===== PHOTO GALLERY (travel-escape-gallery style) ===== -->
+<section id="galeria" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="section-title mb-3">Nossa Coleção em Destaque</h2>
+    <p class="section-subtitle">Explore cada produto e clique para ver na Shopee</p>
+
+    <!-- Main Galleria -->
+    <p-galleria
+      [value]="galleryItems"
+      [responsiveOptions]="responsiveOptions"
+      [numVisible]="5"
+      [showThumbnails]="true"
+      [showIndicators]="false"
+      [showItemNavigators]="true"
+      [showItemNavigatorsOnHover]="true"
+      [circular]="true"
+      [autoPlay]="true"
+      [transitionInterval]="3500"
+      styleClass="gallery-papelaria rounded-3xl overflow-hidden shadow-xl"
+    >
+      <ng-template #item let-item>
+        <a [href]="shopeeUrl" target="_blank" rel="noopener noreferrer" class="block relative">
+          <img
+            [src]="item.src"
+            [alt]="item.alt"
+            class="gallery-item-img"
+          />
+          <!-- Overlay caption -->
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-8 py-6">
+            <p-tag [value]="'🛍️ Ver na Shopee'" styleClass="gallery-shopee-tag"></p-tag>
+            <h3 class="text-2xl font-black text-white mb-1">{{ item.title }}</h3>
+            <p class="text-gray-200 text-sm">{{ item.description }}</p>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template #thumbnail let-item>
+        <div class="p-1">
+          <img
+            [src]="item.src"
+            [alt]="item.alt"
+            class="gallery-thumb-img"
+          />
+        </div>
+      </ng-template>
+    </p-galleria>
+  </div>
+</section>
+
 <!-- ===== SHOPEE CTA BANNER ===== -->
 <section class="py-20 bg-gradient-to-r from-[#ee4d2d] to-[#f77d0e] relative overflow-hidden">
   <div class="absolute inset-0 opacity-10">
@@ -201,6 +250,7 @@
         <ul class="space-y-2 text-sm">
           <li><a href="#sobre" class="hover:text-rose-400 transition-colors">Sobre nós</a></li>
           <li><a href="#categorias" class="hover:text-rose-400 transition-colors">Categorias</a></li>
+          <li><a href="#galeria" class="hover:text-rose-400 transition-colors">Galeria</a></li>
           <li><a href="#depoimentos" class="hover:text-rose-400 transition-colors">Depoimentos</a></li>
           <li><a [href]="shopeeUrl" target="_blank" rel="noopener noreferrer" class="hover:text-rose-400 transition-colors">Nossa loja Shopee</a></li>
         </ul>

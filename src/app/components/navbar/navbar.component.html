@@ -1,0 +1,22 @@
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-3xl">✏️</span>
+      <span class="text-xl font-extrabold text-rose-600">Papelaria Personalizada</span>
+    </div>
+    <ul class="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
+      <li><a href="#sobre" class="hover:text-rose-600 transition-colors">Sobre</a></li>
+      <li><a href="#categorias" class="hover:text-rose-600 transition-colors">Categorias</a></li>
+      <li><a href="#galeria" class="hover:text-rose-600 transition-colors">Galeria</a></li>
+      <li><a href="#depoimentos" class="hover:text-rose-600 transition-colors">Depoimentos</a></li>
+    </ul>
+    <a [href]="appState.shopeeUrl()" target="_blank" rel="noopener noreferrer">
+      <p-button
+        label="Comprar na Shopee"
+        icon="pi pi-shopping-bag"
+        [rounded]="true"
+        styleClass="!bg-[#ee4d2d] !border-[#ee4d2d] hover:!bg-[#d63b1f] font-bold shadow-lg"
+      ></p-button>
+    </a>
+  </nav>
+</header>

@@ -1,0 +1,31 @@
+<section id="galeria" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="section-title mb-3">Nossa Coleção em Destaque</h2>
+    <p class="section-subtitle">Explore cada produto e clique para ver na Shopee</p>
+
+    <!-- Bento Grid -->
+    <div class="bento-grid">
+      @for (item of appState.galleryItems(); track item.title; let i = $index) {
+        <a
+          [href]="appState.shopeeUrl()"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bento-item group"
+          [class.bento-large]="i % 3 === 0"
+        >
+          <div class="bento-content">
+            <img [src]="item.src" [alt]="item.alt" class="bento-image" />
+            <div class="bento-overlay">
+              <p-tag
+                value="🛍️ Ver na Shopee"
+                styleClass="!bg-orange-500 !text-white !font-semibold !mb-2"
+              ></p-tag>
+              <h3 class="bento-title">{{ item.title }}</h3>
+              <p class="bento-description">{{ item.description }}</p>
+            </div>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>

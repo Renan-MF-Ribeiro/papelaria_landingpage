@@ -1,0 +1,29 @@
+<section id="categorias" class="py-20 bg-gradient-to-b from-orange-50 to-amber-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="section-title mb-3">Explore nossas categorias</h2>
+    <p class="section-subtitle">Tudo que você precisa para organizar, criar e se expressar</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for (cat of appState.categories(); track cat.name) {
+        <a
+          [href]="appState.shopeeUrl()"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group block rounded-3xl p-7 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+          [style.background-color]="cat.bg + '80'"
+        >
+          <div class="text-5xl mb-4">{{ cat.icon }}</div>
+          <h3
+            class="text-xl font-bold text-gray-900 mb-2 group-hover:text-rose-600 transition-colors"
+          >
+            {{ cat.name }}
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">{{ cat.description }}</p>
+          <div class="flex items-center gap-2 text-rose-600 font-semibold text-sm">
+            <span>Ver na Shopee</span>
+            <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>

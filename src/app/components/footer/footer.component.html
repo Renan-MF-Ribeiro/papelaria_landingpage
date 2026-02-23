@@ -1,0 +1,54 @@
+<footer class="bg-gray-900 text-gray-300 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl">✏️</span>
+          <span class="text-xl font-extrabold text-white">Papelaria Personalizada</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Produtos de papelaria com design exclusivo e qualidade premium. Encontre tudo para
+          organizar e expressar sua criatividade.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-4">Links Rápidos</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#sobre" class="hover:text-rose-400 transition-colors">Sobre nós</a></li>
+          <li>
+            <a href="#categorias" class="hover:text-rose-400 transition-colors">Categorias</a>
+          </li>
+          <li><a href="#galeria" class="hover:text-rose-400 transition-colors">Galeria</a></li>
+          <li>
+            <a href="#depoimentos" class="hover:text-rose-400 transition-colors">Depoimentos</a>
+          </li>
+          <li>
+            <a
+              [href]="appState.shopeeUrl()"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-rose-400 transition-colors"
+              >Nossa loja Shopee</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-4">Compre conosco</h4>
+        <p class="text-gray-400 text-sm mb-4">
+          Visite nossa loja oficial na Shopee e aproveite promoções exclusivas!
+        </p>
+        <a [href]="appState.shopeeUrl()" target="_blank" rel="noopener noreferrer">
+          <button class="btn-shopee w-full text-center">🛍️ Ir para a Shopee</button>
+        </a>
+      </div>
+    </div>
+    <p-divider styleClass="!border-gray-700"></p-divider>
+    <div
+      class="flex flex-col md:flex-row items-center justify-between gap-4 pt-4 text-xs text-gray-500"
+    >
+      <span>© 2025 Papelaria Personalizada. Todos os direitos reservados.</span>
+      <span>Feito com ❤️ e muito café ☕</span>
+    </div>
+  </div>
+</footer>
